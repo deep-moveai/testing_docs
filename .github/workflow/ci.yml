@@ -28,6 +28,6 @@ jobs:
         run: |
           poetry install
 
-      - name: Run Tests
+      - name: Deploy to GitHub Pages
         run: |
-          poetry run pytest
+          mkdocs gh-deploy --force
